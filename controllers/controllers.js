@@ -1,4 +1,4 @@
-import data from "./config/data.js"
+import data from "../config/data.js"
 const controller = {
     getchien : (req,res)=>{
         res.status(200).json({
