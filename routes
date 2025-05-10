@@ -1,0 +1,13 @@
+import { Router } from "express";
+import controller from "./controllers.js";
+
+const router =  Router()
+
+
+router.get("/",controller.getchien)
+router.post("/create",controller.createchien)
+router.put("/update/:id", controller.updatechien)
+router.delete("/delete/:id",controller.deletechien)
+
+
+export default router 
